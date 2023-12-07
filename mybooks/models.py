@@ -6,3 +6,6 @@ class Books(models.Model):
     author = models.CharField(max_length=50)
     year = models.PositiveSmallIntegerField()
     isbn = models.PositiveBigIntegerField()
+
+    def __str__(self):
+        return self.name
